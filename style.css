@@ -1,0 +1,307 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* HERO */
+.hero {
+  background: #e9ecef;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1 1 350px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.hero-image img {
+  max-width: 300px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* SOBRE */
+.sobre {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.sobre-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre-img img {
+  max-width: 280px;
+}
+
+.sobre-text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* SERVIÇOS */
+.servicos {
+  background: #f1f3f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Novo estilo animado para serviços */
+.cards.animados {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.card.vibrante {
+  background: linear-gradient(135deg, #f4c531, #e1b12c);
+  color: #222;
+  flex: 1 1 280px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(244, 197, 49, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: default;
+  text-align: center;
+}
+
+.card.vibrante:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(244, 197, 49, 0.7);
+}
+
+.card.vibrante i {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  margin-bottom: 30px;
+}
+
+/* Fundo e cores personalizadas para depoimentos */
+.depoimentos {
+  background: linear-gradient(135deg, #222831, #393e46);
+  padding: 60px 0;
+  color: #eee;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  color: #f4c531;
+}
+
+/* Cards animados e vibrantes para depoimentos */
+.depoimentos .cards.animados {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.card.depoimento.vibrante {
+  background: #393e46cc;
+  color: #f0e9d2;
+  font-style: italic;
+  box-shadow: 0 6px 15px #0009;
+  flex: 1 1 300px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+  cursor: default;
+  text-align: center;
+}
+
+.card.depoimento.vibrante:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px #f4c531cc;
+}
+
+.card.depoimento strong {
+  display: block;
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #f4c531;
+  font-size: 1.1rem;
+}
+
+/* CONTATO */
+.contato {
+  background: #f1f3f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contato form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato input,
+.contato textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contato button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.contato button:hover {
+  background: #0056b3;
+}
+
+/* FOOTER */
+footer {
+  background: #212529;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ANIMAÇÕES */
+.fade-in,
+.slide-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.slide-in {
+  transform: translateX(-30px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+}

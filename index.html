@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechFix Soluções</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="fade-in">
+    <div class="container header-container">
+      <h1 class="logo">TechFix Soluções</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero slide-in">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Soluções criativas e digitais</h2>
+          <p>Do seu site à automação da sua empresa.</p>
+          <a href="#contato" class="btn">Fale conosco</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="Tech Illustration" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre fade-in">
+    <div class="container sobre-grid">
+      <div class="sobre-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Sobre a empresa" />
+      </div>
+      <div class="sobre-text">
+        <h2>Quem somos</h2>
+        <p>Especialistas em soluções digitais e manutenção técnica com foco em inovação e resultado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos slide-in">
+    <div class="container">
+      <h2>O que fazemos</h2>
+      <div class="cards animados">
+        <div class="card vibrante">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Sites modernos</h3>
+          <p>Design, velocidade e SEO para sua presença online.</p>
+        </div>
+        <div class="card vibrante">
+          <i class="fas fa-tools"></i>
+          <h3>Suporte técnico</h3>
+          <p>Manutenção em computadores, redes e servidores.</p>
+        </div>
+        <div class="card vibrante">
+          <i class="fas fa-robot"></i>
+          <h3>Automação</h3>
+          <p>Automatize processos e ganhe produtividade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos fade-in" style="background: linear-gradient(135deg, #222831, #393e46); padding: 60px 0; color: #eee;">
+    <div class="container">
+      <h2 style="color:#f4c531;">Clientes felizes</h2>
+      <div class="cards animados">
+        <div class="card depoimento vibrante">
+          <p>"Atendimento ágil e resultado incrível!"</p>
+          <strong>— João Silva</strong>
+        </div>
+        <div class="card depoimento vibrante">
+          <p>"Meu site ficou incrível. Recomendo muito!"</p>
+          <strong>— Marina Rocha</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato slide-in">
+    <div class="container">
+      <h2>Vamos conversar</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Mensagem..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <div class="container">
+      <p>&copy; 2025 TechFix Soluções. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in, .slide-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
